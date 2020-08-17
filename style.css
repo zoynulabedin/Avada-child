@@ -1,0 +1,326 @@
+/*
+Theme Name: Avada Child
+Theme URI: https://avada.theme-fusion.com/
+Template: Avada
+Author: ThemeFusion
+Author URI: https://themeforest.net/user/ThemeFusion
+Description: The Avada Website Builder is the ultimate design and creation suite. Design Anything, Build Everything, Fast. The #1 selling product of all time on ThemeForest.
+Version: 7.0.2.1597255276
+Updated: 2020-08-12 18:01:16
+
+*/
+
+.hero_bottom:hover {
+    background: #091838;
+    transition: .3s;
+}
+
+.hero_bottom:hover i {
+  color: #fff !important;
+  transition: .3s;
+}
+.hero_bottom:hover h3 {
+  color: #fff !important;
+}
+.hero_bottom:hover p{
+    color:#fff !important;
+}
+
+.our-philoshophy:before {
+  position: absolute;
+  content: 'ABOUT';
+  top: -97px;
+  font-size: 80px;
+  font-weight: 900;
+  opacity: .3;
+  left:0;
+  right:0;
+  margin:auto;
+}
+.what-we-can:before {
+    position: absolute;
+    content: 'CAWHPATAWEBC';
+    font-size: 70px;
+    top: -75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-weight: 800;
+    opacity: .4;
+}
+.service-btns span:before {
+    /* border-bottom: 1px solid #000; */
+    /* padding-bottom: 10px; */
+    border-width: 100p;
+    width: 5px;
+    height: 1px;
+    background: #707070;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    transition:0.6s;
+}
+
+.service-btns {
+    opacity: 0;
+    display:none;
+}
+.servicesss:hover {
+    box-shadow: 5px 5px 10px 6px #EDEDED;
+    transition:0.3s;
+}
+.servicesss:hover .service-btns span:before{
+    width:100px;
+}
+.servicesss:hover .service-btns{
+    display:block;
+    opacity:1;
+}
+li#field_1_4 {
+    margin-top: 28px;
+}
+.wf-section-title {
+    text-align: center;
+}
+
+.behind-heading {
+    font-size: 60px !important;
+    text-transform: uppercase;
+    position: relative;
+    opacity: 0.1;
+    font-weight: 800;
+}
+
+h4.front-title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    font-size: 22px !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.social-block-text {
+    display: grid;
+    grid-template-columns: repeat();
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.single-block p {
+    margin: 0;
+}
+
+.social-icon a {
+    display: inline-block;
+    background: #091838;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+}
+.ccccc p {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+.contact-page ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contact-page li span {
+    color: #A0C54B;
+    margin-right: 5px;
+}
+.single-block p {
+    line-height: 21px;
+}
+h3.business {
+    margin-bottom: 5px;
+}
+.social-icon {
+    text-align: right;
+    margin-right: 11px;
+}
+.single-project {
+    position: relative;
+    z-index: 1;
+    background-size: cover !important;
+    background-position: center !important;
+}
+/*.single-project:before {
+    content: '';width: 100%;
+    height: 100%;
+    background: #000;opacity: .6;position: absolute;z-index: -1;top: 0;left: 0;}*/
+.overlay-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: -1;
+    opacity: .6;
+
+
+}
+.overlay-bgs{
+      position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%; 
+        background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.26) 65%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.26) 65%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.26) 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#42ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+.project-slider .owl-item.center .single-project .overlay-bg{
+    background: -moz-linear-gradient(45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0.50) 65%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.50) 65%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0.50) 65%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#42ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+ul.post-categories {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.project-slider .owl-item.center .single-project .project-cat h3{
+    color: #091838 !important;
+}
+.project-slider .owl-item.center .single-project .project-title h2{
+    color: #091838 !important;
+}
+.project-slider .owl-item.center .single-project .project-btn{
+    color: #091838 !important;
+}
+.project-cat h3 {
+    color: #fff;
+    text-transform:uppercase;
+    font-size:24px;
+}
+
+.project-title h2 {
+    color: #fff;
+}
+
+.single-project {
+    padding: 50px;
+}
+.owl-dots {
+    /* height: 10px; */
+    /* width: 50px; */
+    /* background: #091838; */
+    display: block;
+    margin: 0px -2px;
+   
+}
+
+button.owl-dot.active {
+    width: 50px;
+    height: 10px;
+    display: inine-b;
+    /* display: inline-block; */
+    background: #E4E5E8 !IMPORTANT;
+    /* border: 1px solid #091838; */
+}
+
+button.owl-dot {
+    width: 50px;
+    height: 10px;
+}
+
+button.owl-dot {
+    background: #091838 !IMPORTANT;
+    width: 50px;
+    height: 10px;
+    display: inline-block;
+    margin-right: 6px;
+}
+.single-project {
+    padding: 50px;
+    height: 600px;
+}
+.single-project {
+    display: flex;
+    align-items: flex-end;
+}
+.project-cat h3 {
+    padding: 0;
+    margin: 0 !important;
+    font-size: 32px;
+    color: #fff !important;
+}
+
+.project-title h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-top: 14px;
+}
+
+a.project-btn {
+    color: #fff;
+}
+.project-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.project-box .single-project {
+    height: 400px;
+}
+@media only screen and (min-width:992px) and (max-width:1024px) {
+    .yikes-easy-mc-form .submit-button-inline-label .yikes-easy-mc-submit-button-image{right:124px;}
+    #footer_menuss {
+    text-align: center;
+    margin: auto;
+}
+#footer-num {
+    text-align: center;
+    margin: auto;
+}
+#footer_text_widd {
+    text-align: center;
+}
+}
+@media only screen and (max-width:991px) {
+    #footer_menuss {
+    text-align: center;
+    margin: auto;
+}
+#footer-num {
+    text-align: center;
+    margin: auto;
+}
+#footer_text_widd {
+    text-align: center;
+}
+	
+}
+@media only screen and (max-width:767px) {
+    #footer_menuss {
+    text-align: center;
+    margin: auto;
+}
+#footer-num {
+    text-align: center;
+    margin: auto;
+}
+#footer_text_widd {
+    text-align: center;
+}
+
+}
