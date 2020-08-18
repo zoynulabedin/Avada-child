@@ -200,12 +200,22 @@ ul.post-categories {
 .project-slider .owl-item.center .single-project .project-cat h3{
     color: #091838 !important;
 }
+
 .project-slider .owl-item.center .single-project .project-title h2{
     color: #091838 !important;
 }
 .project-slider .owl-item.center .single-project .project-btn{
     color: #091838 !important;
 }
+.project-slider .owl-item.center .single-project .project-cat ul li a{
+    color: #091838;
+}
+.project-cat ul li a{
+    color:#fff;
+}
+.single-project .project-btn{color: #fff;}
+.single-project .project-cat h3{color: #fff;}
+.single-project .project-title h2{color: #fff;}
 .project-cat h3 {
     color: #fff;
     text-transform:uppercase;
@@ -216,7 +226,7 @@ ul.post-categories {
     color: #fff;
 }
 
-.single-project {
+.single-item {
     padding: 50px;
 }
 .owl-dots {
@@ -249,11 +259,11 @@ button.owl-dot {
     display: inline-block;
     margin-right: 6px;
 }
-.single-project {
+.single-item {
     padding: 50px;
     height: 600px;
 }
-.single-project {
+.single-item {
     display: flex;
     align-items: flex-end;
 }
@@ -282,6 +292,135 @@ a.project-btn {
 .project-box .single-project {
     height: 400px;
 }
+/*project single pages css*/
+.wf-info-box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.wf-single-info h3 {
+    color: #9CC149;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.wf-single-info h3 span {
+    display: block;
+    font-size: 15px;
+    color: #000;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    line-height: 19px;
+}
+
+
+.wf-single-info {
+    text-align: center;
+    border-left: 1px solid#D5D5D5;
+}
+
+.wf-single-info:last-child {
+    border-right: 1px solid #D5D5D5;
+}
+
+.wf-gall-grid-parent {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 15px;
+}
+/*project single page*/
+
+/*gallery css*/
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.project-single-hero {
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    position: relative;
+    z-index: 1;
+}
+
+.project-single-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+   
+}
+.project-single-hero:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+
+}
+
+.project-single-content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #091838;
+    margin-left: 50px;
+    /* margin-top: -90px; */
+}
+
+.project-single-hero-section {
+    margin-top: 31px;
+}
+h4.front-titles.fusion-responsive-typography-calculated {
+    position: relative;
+    top: -116px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.grid {
+    margin-bottom: 50px;
+}
+.below_space {
+    margin-bottom: 27px;
+}
+.wf_testimonial {
+    text-align: center;
+}
+.project-hero-bottom-section {margin-top: 62px;background: #fff;}
+/*gallery css end*/
 @media only screen and (min-width:992px) and (max-width:1024px) {
     .yikes-easy-mc-form .submit-button-inline-label .yikes-easy-mc-submit-button-image{right:124px;}
     #footer_menuss {
@@ -308,8 +447,10 @@ a.project-btn {
 #footer_text_widd {
     text-align: center;
 }
-	
+
 }
+	
+
 @media only screen and (max-width:767px) {
     #footer_menuss {
     text-align: center;
@@ -322,5 +463,6 @@ a.project-btn {
 #footer_text_widd {
     text-align: center;
 }
+
 
 }

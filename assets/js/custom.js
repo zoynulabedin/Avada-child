@@ -3,7 +3,15 @@
 (function ($) {
     "use strict";
 
+
+
     jQuery(document).ready(function ($) {
+
+    	 $('.grid').masonry({
+		  itemSelector: '.grid-item',
+		  columnWidth: '.grid-sizer',
+		  percentPosition: true
+		});
 
       $('.project-slider').owlCarousel({
     loop:true,
@@ -28,6 +36,7 @@
     // }
 })
        
+
 
     });
 

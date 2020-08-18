@@ -29,6 +29,7 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
         wp_enqueue_style( 'chld_thm_cfg_child', trailingslashit( get_stylesheet_directory_uri() ) . 'style.css', array( 'chld_thm_cfg_parent' ) );
 
           wp_enqueue_script('owl-carusel-js',get_stylesheet_directory_uri().'/assets/js/owl.carousel.min.js',array('jquery'),'1.0',true);
+     wp_enqueue_script('masonry-js',get_stylesheet_directory_uri().'/assets/js/masonry.pkgd.min.js',array('jquery'),'1.0',true);
      wp_enqueue_script('custom-js',get_stylesheet_directory_uri().'/assets/js/custom.js',array('jquery'),'1.0',true);
     }
 endif;
@@ -82,7 +83,7 @@ function wf_project_slider_fun($atts,$content){
         'posts_per_page'=>-1,
     ));
  while($proj->have_posts()):$proj->the_post(); ?>
-    <div class="single-project" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
+    <div class="single-project single-item" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
         <div class="overlay-bg"></div>
         <div class="project-content">
             <?php $catt =  get_categories(); ?>
@@ -120,7 +121,7 @@ function wf_project_grid_fun($atts,$content){
         'posts_per_page'=>$count,
     ));
  while($proj->have_posts()):$proj->the_post(); ?>
-    <div class="single-project" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
+    <div class="single-project single-item" style="background-image:url(<?php the_post_thumbnail_url() ?>);">
         <div class="overlay-bgs"></div>
         <div class="project-content">
             <?php $catt =  get_categories(); ?>
@@ -138,4 +139,68 @@ return ob_get_clean();
  }
 add_shortcode('wf_project_grid','wf_project_grid_fun');
 
+
+function cptui_register_my_cpts_project() {
+
+    /**
+     * Post Type: Project.
+     */
+
+    $labels = [
+        "name" => __( "Project", "custom-post-type-ui" ),
+        "singular_name" => __( "Project", "custom-post-type-ui" ),
+    ];
+
+    $args = [
+        "label" => __( "Project", "custom-post-type-ui" ),
+        "labels" => $labels,
+        "description" => "",
+        "public" => true,
+        "publicly_queryable" => true,
+        "show_ui" => true,
+        "show_in_rest" => true,
+        "rest_base" => "",
+        "rest_controller_class" => "WP_REST_Posts_Controller",
+        "has_archive" => false,
+        "show_in_menu" => true,
+        "show_in_nav_menus" => true,
+        "delete_with_user" => false,
+        "exclude_from_search" => false,
+        "capability_type" => "post",
+        "map_meta_cap" => true,
+        "hierarchical" => false,
+        "rewrite" => [ "slug" => "project", "with_front" => true ],
+        "query_var" => true,
+        "supports" => [ "title", "editor", "thumbnail" ],
+        "taxonomies" => [ "category" ],
+    ];
+
+    register_post_type( "project", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_project' );
+
+
+// project single pages css
+add_action('wp_head','project_single_pages_css');
+
+function project_single_pages_css(){
+if(is_singular( 'project' )){
+    ?>
+
+<style>
+ .fusion-page-title-bar.fusion-page-title-bar-breadcrumbs.fusion-page-title-bar-center {
+    display: none;
+}
+main#main {
+    margin: 0;
+    padding: 0;
+}
+html:not(.avada-has-site-width-percent) #main, html:not(.avada-has-site-width-percent) .fusion-footer-copyright-area, html:not(.avada-has-site-width-percent) .fusion-footer-widget-area, html:not(.avada-has-site-width-percent) .fusion-sliding-bar-position-bottom .fusion-sliding-bar, html:not(.avada-has-site-width-percent) .fusion-sliding-bar-position-top .fusion-sliding-bar, html:not(.avada-has-site-width-percent) .tfs-slider .slide-content-container{
+    padding-right: 0;
+    padding-left: 0;
+}   
+}
+</style>
+<?php } }
 
