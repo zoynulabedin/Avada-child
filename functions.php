@@ -125,7 +125,7 @@ function wf_project_grid_fun($atts,$content){
         <div class="overlay-bgs"></div>
         <div class="project-content">
             <?php $catt =  get_categories(); ?>
-            <div class="project-cat"><h3><?php the_category(); ?></h3></div>
+            <div class="project-cat pgd"><h3><?php the_category(); ?></h3></div>
             <div class="project-title"><h2 style="color: #091838"><?php the_title(); ?></h2></div>
             <a href="<?php the_permalink(); ?>" style="color:#091838;" class="project-btn">View Story</a>
         </div>

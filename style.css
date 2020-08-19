@@ -419,8 +419,51 @@ h4.front-titles.fusion-responsive-typography-calculated {
 .wf_testimonial {
     text-align: center;
 }
+.fusion-testimonials.classic .company-name{display: block !important;}
+.fusion-testimonials.classic .testimonial-thumbnail{display: block !important;}
 .project-hero-bottom-section {margin-top: 62px;background: #fff;}
 /*gallery css end*/
+
+/*Gravity form*/
+ul#gform_fields_1 input {
+    border-top: none;
+    background: none;
+    border-left: none;
+    border-right: none;
+}
+select#input_1_4 {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+}
+
+.select-arrow {
+    border: none;
+    background: none !IMPORTANT;
+    color: #000;
+}
+.gform_wrapper .gform_footer{text-align: right;}
+input#gform_submit_button_2 {
+    height: 50px;
+    width: 100px;
+}
+
+#gform_2 .gform_footer.top_label {
+    display: inline-block;
+    width: 16%;
+    position: absolute;
+    top: -4px;
+    right: -8px;
+}
+.pgd li a {color: #091838 !IMPORTANT;}
+
+form#gform_2 {
+    position: relative;
+}
+
+input#input_2_1 {/* border-color: #9FC54B; */border: 2px solid #9FC54B;}
+/*Gravity form end*/
 @media only screen and (min-width:992px) and (max-width:1024px) {
     .yikes-easy-mc-form .submit-button-inline-label .yikes-easy-mc-submit-button-image{right:124px;}
     #footer_menuss {
@@ -463,6 +506,25 @@ h4.front-titles.fusion-responsive-typography-calculated {
 #footer_text_widd {
     text-align: center;
 }
+.wf-section-title h4 {
+    margin: 0;
+}
+.fusion-social-networks {
+    text-align: center;
+}
+.gform_wrapper .gform_footer input[type=image]{display: inherit !important;}
+.project-box{
+    grid-template-columns:repeat(1,1fr);
+}
+.wf-content-details {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
 
-
+@media only screen and (max-width:500px) {
+.wf-single-info h3 span{
+    font-size: 14px;
+}
+.wf-single-info h3{font-size: 13px;}
 }
