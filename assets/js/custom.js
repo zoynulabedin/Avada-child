@@ -6,12 +6,7 @@
 
 
     jQuery(document).ready(function ($) {
-
-    	 $('.grid').masonry({
-		  itemSelector: '.grid-item',
-		  columnWidth: '.grid-sizer',
-		  percentPosition: true
-		});
+    	$('.imageGallery1 a').simpleLightbox();
 
       $('.project-slider').owlCarousel({
     loop:true,

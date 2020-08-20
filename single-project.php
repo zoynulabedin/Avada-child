@@ -32,17 +32,17 @@ get_header();?>
 </div>
 
 
-<div class="grid">
-  <div class="grid-sizer"></div>
-  <?php $gall = get_field('gallery');
+
+
+<div class="imageGallery1">
+	  <?php $gall = get_field('gallery');
 
   foreach ($gall as $gall_url):
    ?>
-  <div class="grid-item">
-    <img src="<?php echo $gall_url; ?>" />
-  </div>
-  <?php endforeach; ?>
+    <a href="<?php echo $gall_url; ?>"><img src="<?php echo $gall_url; ?>" alt="" /></a>
+    <?php endforeach; ?>
 </div>
+
 <?php get_footer();?>
 
 
